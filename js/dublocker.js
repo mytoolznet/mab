@@ -3,8 +3,8 @@ $(function(){
   function keepChecking(){
     var id = setTimeout(keepChecking, 1000);
     if(time == 2){
-      if(!($(".mad-banner").is(":visible"))){
-        $(".mad-modal").fadeIn();
+      if(!($(".ad-banner").is(":visible"))){
+        $(".ad-modal").fadeIn();
         $('html').attr('oncontextmenu', 'return false');
         $('body').attr('oncontextmenu', 'return false').attr('onkeydown', 'return false').attr('onmousedown', 'return false');
         time = 0;
@@ -15,7 +15,7 @@ $(function(){
     time++;
   }
   keepChecking();
-  $(".mad-modal .adb-btn").click(function(){
+  $(".ad-modal .adb-btn").click(function(){
     $("body").removeClass("avoid-page-scroll");
     location.reload();
   });
