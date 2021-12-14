@@ -3,7 +3,7 @@ $(function(){
   function keepChecking(){
     var id = setTimeout(keepChecking, 1000);
     if(time == 2){
-      if(!($(".ad-banner").is(":visible"))){
+      if(!($(".mad-banner").is(":visible"))){
         $(".ad-modal").fadeIn();
         $('html').attr('oncontextmenu', 'return false');
         $('body').attr('oncontextmenu', 'return false').attr('onkeydown', 'return false').attr('onmousedown', 'return false');
