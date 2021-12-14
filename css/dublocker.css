@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* body */
+body.avoid-page-scroll {
+  overflow-y: hidden;
+}
+
+/* ad-modal */
+.ad-modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #FF2626;
+  text-align: center;
+  padding: 60px 30px;
+  overflow-y: auto;
+  z-index: 99999;
+}
+
+/* avatar */
+.ad-modal .avatar {
+  margin: 0 auto;
+  width: 100px;
+  max-width: 100%
+}
+
+/* title-1 */
+.ad-modal .title-1 {
+  font-size: 36px;
+  color: #FFFFFF;
+  margin-top: 15px
+}
+
+/* text-box */
+.ad-modal .text-box {
+  background-color: #FFFFFF;
+  padding: 50px 60px;
+  border-radius: 2px;
+  max-width: 700px;
+  margin: 30px auto 0;
+}
+.ad-modal .text-box .title-2 {
+  font-size: 20px;
+  color: #012443;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 15px
+}
+.ad-modal .text-box .para-1 {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: 'Arial', sans-serif;
+  color: #888888;
+  margin-bottom: 30px
+}
+
+/* adb-btn */
+.ad-modal .text-box .adb-btn {
+  background-color: #172774;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  padding: 14px 24px;
+  color: #FFFFFF;
+  border: 0;
+  cursor: pointer;
+  border-radius: 2px
+}
+.ad-modal .text-box .adb-btn:hover {
+  background-color: #012443
+}
+
+/* media-query */
+@media only screen and (max-width: 991.98px) {
+  .ad-modal .avatar {
+    width: 70px
+  }
+  .ad-modal .title-1 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .ad-modal .avatar {
+    width: 50px
+  }
+  .ad-modal .title-1 {
+    font-size: 26px;
+  }
+  .ad-modal .text-box {
+    padding: 50px 30px;
+  }
+  .ad-modal .text-box .title-2 {
+    font-size: 17px;
+  }
+  .ad-modal .text-box .para-1 {
+    font-size: 14px;
+  }
+}
+/* ------------------------ */
